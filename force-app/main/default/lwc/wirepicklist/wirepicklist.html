@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="user picklist">
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+            name="progress"
+            label="Status"
+            value={INDUSTRYCHOSE}
+            placeholder="Select Progress"
+            options={industryoptions}
+            onchange={handleChange} ></lightning-combobox>
+          </div>
+
+      <p>The data is SELECTED AS :<STRONG >{INDUSTRYCHOSE}</STRONG></p>
+
+        </lightning-card>
+</template>

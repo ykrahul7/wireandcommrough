@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="data for wire call method">
+        <div class="slds-m-around_medium" >
+            <lightning-combobox
+            name="progress"
+            label="Select Type"
+            value={value}
+            placeholder="Select Progress"
+            options={selectionaType}
+            onchange={handleChange} ></lightning-combobox>
+ 
+    </div>
+        
+        <div class="slds-m-around_medium" >
+      <template for:each={rr} for:item="d">
+    <div class="slds-box_small" key={d.id}>
+    <p><strong>name</strong>{d.Name}</p>
+    <p><strong>Type</strong>{d.Type}</p>
+
+    </div>
+        
+      
+      </template>
+    </div>
+        
+            </lightning-card>
+</template>
